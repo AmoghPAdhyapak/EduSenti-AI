@@ -1,0 +1,32 @@
+# ── Dependencies (re-installed by Vercel / npm, never commit) ──
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ── Build output (Vercel rebuilds this; do NOT commit) ──
+frontend/dist/
+.vercel/
+.tsbuildinfo
+
+# ── Local databases (dev only) ──
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+
+# ── Secrets / env (never commit) ──
+.env
+.env.*
+!.env.example
+
+# ── Editor / OS noise ──
+.DS_Store
+*.log
+
+# NOTE: All application source (api/, frontend/src/, vercel.json, README.md,
+# requirements.txt, package.json, package-lock.json, tsconfig.json) is tracked.
+# If GitHub shows this repo as empty, the cause is the upload (e.g. a nested
+# folder or files never committed), NOT this file.
