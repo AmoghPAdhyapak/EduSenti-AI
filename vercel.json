@@ -4,12 +4,16 @@
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "dist"
+      }
     },
     {
       "src": "api/index.py",
       "use": "@vercel/python",
-      "config": { "includeFiles": "api/_lib/**" }
+      "config": {
+        "includeFiles": "api/_lib/**"
+      }
     }
   ],
   "routes": [
